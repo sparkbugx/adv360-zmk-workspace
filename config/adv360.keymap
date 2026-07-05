@@ -52,13 +52,13 @@
         copy_mac: copy_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp C>, <&macro_release &kp LCTRL>;
+            bindings = <&macro_press>, <&kp LC(C)>;
         };
 
         paste_mac: paste_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp V>, <&macro_release &kp LCTRL>;
+            bindings = <&macro_press>, <&kp LC(V)>;
         };
     };
 
@@ -90,11 +90,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2      &kp F3    &kp F4      &kp F5       &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11          &kp F12
-&trans  &kp QMARK   &kp UP    &kp EXCL    &trans       &trans  &none                                       &none   &trans  &trans  &trans  &trans   &kp PRINTSCREEN  &trans
-&trans  &kp LEFT    &kp DOWN  &kp RIGHT   &trans       &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans           &trans
-&trans  &trans      &trans    &copy_mac   &paste_mac   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans           &trans
-&trans  &trans      &trans    &kp LC(A)   &kp LC(W)            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans           &trans
+&kp F1  &kp F2     &kp F3    &kp F4     &kp F5      &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11          &kp F12
+&trans  &kp QMARK  &kp UP    &kp EXCL   &trans      &trans  &none                                       &none   &trans  &trans  &trans  &vpn     &kp PRINTSCREEN  &trans
+&trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans      &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans           &trans
+&trans  &trans     &trans    &copy_mac  &paste_mac  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans           &trans
+&trans  &trans     &trans    &kp LC(A)  &kp LC(W)           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans           &trans
             >;
         };
 
