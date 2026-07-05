@@ -52,13 +52,41 @@
         copy_mac: copy_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(C)>;
+            bindings = <&macro_tap>, <&kp LC(C)>;
         };
 
         paste_mac: paste_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(V)>;
+            bindings = <&macro_release>, <&kp LC(V)>;
+        };
+
+        gitinit: gitinit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp I &kp N &kp I &kp T>;
+            label = "GITINIT";
+        };
+
+        gitadd: gitadd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp DOT>;
+            label = "GITADD";
+        };
+
+        gitcommit: gitcommit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp DQT &kp SPACE &kp DQT>;
+            label = "GITCOMMIT";
+        };
+
+        gitpush: gitpush {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp SPACE &kp MINUS &kp U &kp SPACE &kp O &kp R &kp I &kp G &kp I &kp N &kp SPACE &kp M &kp A &kp I &kp N>;
+            label = "GITPUSH";
         };
     };
 
