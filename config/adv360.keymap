@@ -48,6 +48,20 @@
             bindings = <&kp S &kp U &kp D &kp O &kp SPACE &kp O &kp P &kp E &kp N &kp V &kp P &kp N>;
             label = "NEW_MACRO";
         };
+
+        windowscopy: windowscopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp C>;
+            label = "WINDOWSCOPY";
+        };
+
+        windowspaste: windowspaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp V>;
+            label = "WINDOWSPASTE";
+        };
     };
 
     keymap {
@@ -59,7 +73,7 @@
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                   &tog 0     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 2                                                   &tog 3     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 4    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &tog 2                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &tog 2     &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
@@ -77,13 +91,13 @@
 
         fn {
             display-name = "Fn";
-                        bindings = <
-            &kp F1  &kp F2      &kp F3    &kp F4     &kp F5     &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11          &kp F12
-            &trans  &kp QMARK   &kp UP    &kp EXCL   &trans     &trans  &none                                       &none   &trans  &trans  &trans  &trans   &kp PRINTSCREEN  &trans
-            &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans     &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans           &trans
-            &trans  &trans      &trans    &kp LC(C)  &kp LC(V)  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans           &trans
-            &trans  &trans      &trans    &kp LC(A)  &kp LC(W)          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans           &trans
-                        >;
+            bindings = <
+&kp F1  &kp F2          &kp F3          &kp F4           &kp F5         &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11          &kp F12
+&trans  &kp QUESTION    &kp UP_ARROW    &kp EXCLAMATION  &trans         &trans  &none                                       &none   &trans  &trans  &trans  &trans   &kp PRINTSCREEN  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans           &trans
+&trans  &trans          &trans          &windowscopy     &windowspaste  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans           &trans
+&trans  &trans          &trans          &kp LC(A)        &kp LC(W)              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans           &trans
+            >;
         };
 
         mod {
