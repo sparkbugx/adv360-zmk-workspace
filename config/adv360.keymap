@@ -130,8 +130,8 @@
             display-name = "Red";
             bindings = <
 &none  &none     &none      &none        &none  &none        &none                                   &none  &none  &none      &none  &none          &none      &none
-&none  &none     &none      &none        &none  &none        &none                                   &none  &none  &git_pull  &none  &git_checkout  &git_push  &none
-&none  &git_add  &git_stat  &none        &none  &none        &tog 4  &none  &none      &none  &none  &none  &none  &none      &none  &git_log       &none      &git_commit
+&none  &none     &none      &none        &none  &none        &tog 4                                  &none  &none  &git_pull  &none  &git_checkout  &git_push  &none
+&none  &git_add  &git_stat  &none        &none  &none        &none   &none  &none      &none  &none  &none  &none  &none      &none  &git_log       &none      &git_commit
 &none  &none     &none      &git_commit  &none  &git_branch                 &none      &none                &none  &none      &none  &none          &none      &none
 &none  &none     &none      &none        &none               &none   &none  &none      &none  &none  &none         &none      &none  &none          &none      &none
             >;
