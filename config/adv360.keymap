@@ -67,7 +67,6 @@
     };
     extra1 { 
       display-name = "Red";    
-      status = "reserved";
       bindings = <
       &none  &none     &none      &none        &none  &none  &none                                       &none  &none  &none      &none  &none      &none  &none
       &none  &none     &none      &none        &none  &none  &none                                       &none  &none  &git_pull  &none  &none      &git_push &none
@@ -77,19 +76,37 @@
                   >;
     };
 
-    extra2 { 
-      display-name = "Purple";    
-      status = "reserved";
-    };
-
-    extra3 { 
-      display-name = "Cyan";    
-      status = "reserved";
-    };
-
-    extra4 { 
-      display-name = "Yellow";    
-      status = "reserved";
-    };
+    extra2 {
+                display-name = "Purple";
+                bindings = <
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none &none &none                   &none &none &none &none &none &none &none &none &none
+    &none &none &none &none &none &none             &none &none                         &none &none &none &none &none &none
+    &none &none &none &none &none       &none &none &none &none       &none &none &none       &none &none &none &none &none
+                >;
+            };
+    
+            extra3 {
+                display-name = "Cyan";
+                bindings = <
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none &none &none                   &none &none &none &none &none &none &none &none &none
+    &none &none &none &none &none &none             &none &none                         &none &none &none &none &none &none
+    &none &none &none &none &none       &none &none &none &none       &none &none &none       &none &none &none &none &none
+                >;
+            };
+    
+            extra4 {
+                display-name = "Yellow";
+                bindings = <
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none                                           &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none &none &none                   &none &none &none &none &none &none &none &none &none
+    &none &none &none &none &none &none             &none &none                         &none &none &none &none &none &none
+    &none &none &none &none &none       &none &none &none &none       &none &none &none       &none &none &none &none &none
+                >;
+            };
   };
 };
