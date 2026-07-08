@@ -141,7 +141,7 @@
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 4                                                       &none      &kp Y   &kp U   &kp I      &kp O        &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L        &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &windowscopy                         &kp N   &kp M   &kp COMMA  &kp DOT      &kp FSLH  &kp RIGHT_SHIFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &windowspaste  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &Parentesis  &kp RBKT  &tog 2
+&tog 2     &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &windowspaste  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &Parentesis  &kp RBKT  &tog 2
             >;
         };
 
@@ -159,11 +159,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3           &kp F4          &kp F5           &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8            &kp F9              &kp F10       &kp F11              &kp F12
-&trans  &trans  &trans           &trans          &kp LS(LC(R))    &trans  &none                                       &none   &trans  &trans            &kp LS(LC(I))       &trans        &trans               &trans
-&trans  &trans  &kt PRINTSCREEN  &mkp RCLK       &mkp LCLK        &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp RG(UP_ARROW)  &kp RG(DOWN_ARROW)  &kt RG(LEFT)  &kp RG(RIGHT_ARROW)  &trans
-&trans  &trans  &trans           &ubuntucopy     &ubuntupaste     &trans                  &trans      &trans                  &trans  &kp RG(M)         &trans              &trans        &trans               &trans
-&trans  &trans  &trans           &mmv MOVE_LEFT  &mmv MOVE_RIGHT          &trans  &trans  &trans      &trans  &trans  &trans          &mmv MOVE_UP      &mmv MOVE_DOWN      &trans        &trans               &trans
+&kp F1  &kp F2     &kp F3           &kp F4          &kp F5           &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8            &kp F9              &kp F10       &kp F11              &kp F12
+&trans  &trans     &trans           &trans          &kp LS(LC(R))    &trans  &none                                       &none   &trans  &trans            &kp LS(LC(I))       &trans        &trans               &trans
+&trans  &trans     &kt PRINTSCREEN  &trans          &trans           &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp RG(UP_ARROW)  &kp RG(DOWN_ARROW)  &kt RG(LEFT)  &kp RG(RIGHT_ARROW)  &trans
+&trans  &mkp LCLK  &mkp RCLK        &ubuntucopy     &ubuntupaste     &trans                  &trans      &trans                  &trans  &kp RG(M)         &trans              &trans        &trans               &trans
+&trans  &trans     &trans           &mmv MOVE_LEFT  &mmv MOVE_RIGHT          &trans  &trans  &trans      &trans  &trans  &trans          &mmv MOVE_UP      &mmv MOVE_DOWN      &trans        &trans               &trans
             >;
         };
 
