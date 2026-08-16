@@ -215,11 +215,11 @@
         extra2 {
             display-name = "Purple";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans      &trans         &mkp MCLK  &trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans      &kp PAGE_UP                          &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp RIGHT_CONTROL  &trans  &trans      &kp PAGE_DOWN  &mkp LCLK  &mkp RCLK          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans      &trans         &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans      &kp PAGE_UP                    &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp RIGHT_CONTROL  &trans  &trans      &kp PAGE_DOWN  &trans  &trans          &trans          &trans          &trans           &trans  &trans
             >;
         };
 
