@@ -217,9 +217,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans      &trans         &mkp MCLK  &trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans      &trans         &trans     &trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                             &trans      &kp PAGE_UP                          &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp RIGHT_CONTROL  &trans  &trans      &kp PAGE_DOWN  &mkp LCLK  &mkp RCLK          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp RIGHT_CONTROL  &trans  &trans      &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &trans          &trans          &trans           &trans  &trans
             >;
         };
 
@@ -246,5 +246,8 @@
         };
     };
 };
+<<<<<<< HEAD
 
 //comoment
+=======
+>>>>>>> 2547f97fd9c4a076e876c1880779948eccd647b3
