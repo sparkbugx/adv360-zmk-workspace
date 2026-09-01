@@ -157,5 +157,4 @@ In the event of a hardware issue it may be necessary to open a support ticket di
 * https://kinesis-ergo.com/support/kb360pro/#ticket
 
 
-##futehr rfevie
 
