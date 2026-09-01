@@ -158,3 +158,4 @@ In the event of a hardware issue it may be necessary to open a support ticket di
 
 
 
+## dino changes
